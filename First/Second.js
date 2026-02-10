@@ -1,1 +1,0 @@
-console.log("This is Second Day of learning");
