@@ -6,16 +6,15 @@ import Resume from './Resume.jsx'
 import Demo from './Demo.jsx'
 
 function App() {
-  const fruit=(name)=>{
-    alert(name)
+  const [data,setdata] = useState("My Name is");
+  const fun = () =>{
+    setdata("AMAN KUMAR RAI")
   }
- 
+
   return (
     <>
-      <h1> Event Handling </h1>
-      <button onClick={()=>fruit("Apple")}> Apple </button>
-      <br/> <br/>
-      <button onClick={()=>fruit("Banana")}> Banana </button>
+      <h2> {data} </h2>
+      <button onClick = {()=>fun()}> Click </button>
     </>
   )
 }
